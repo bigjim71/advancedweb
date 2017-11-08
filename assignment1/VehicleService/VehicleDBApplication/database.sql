@@ -5,6 +5,7 @@ SET FOREIGN_KEY_CHECKS=0;
 DROP TABLE IF EXISTS `vehicle`;
 CREATE TABLE `vehicle` (
   `numberPlate` varchar(255) NOT NULL,
+  `vehicleType` varchar(30) NOT NULL,
   `mileage` int(11) NOT NULL default 0,
   `rentalCharge` double default NULL,
   `under21` boolean default false,
@@ -34,11 +35,11 @@ CREATE TABLE `rental` (
 -- ----------------------------
 
 -- 4WD
--- numberPlate, mileage, rentalCharge, under21, offRoad, dirtRoad, normalRoad, numberBeds, toilet
-INSERT INTO `vehicle` VALUES ('ab123 4WD', 100000, 500, false, true, true, true, 0, false);
+-- numberPlate, vehicleType, mileage, rentalCharge, under21, offRoad, dirtRoad, normalRoad, numberBeds, toilet
+INSERT INTO `vehicle` VALUES ('ab123 4WD', '4WD',  100000, 500, false, true, true, true, 0, false);
 -- 2WD
-INSERT INTO `vehicle` VALUES ('ab123 2WD', 1009, 50, true, true, true, true, 0, false);
+INSERT INTO `vehicle` VALUES ('ab123 2WD', '2WD', 1009, 50, true, true, true, true, 0, false);
 -- Camper
-INSERT INTO `vehicle` VALUES ('ab123 CAMP', 10009, 550, true, false, false, true, 3, true);
+INSERT INTO `vehicle` VALUES ('ab123 CAMP', 'CAMPER', 10009, 550, true, false, false, true, 3, true);
 -- Rental
 INSERT INTO `rental` VALUES (10000, 'ab123 CAMP', true);
