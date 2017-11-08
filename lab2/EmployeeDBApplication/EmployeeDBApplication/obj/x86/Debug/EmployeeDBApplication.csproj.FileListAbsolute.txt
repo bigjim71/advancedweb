@@ -1,0 +1,6 @@
+N:\Personal\leicester\advancedweb\lab2\EmployeeDBApplication\EmployeeDBApplication\bin\Debug\EmployeeDBApplication.exe
+N:\Personal\leicester\advancedweb\lab2\EmployeeDBApplication\EmployeeDBApplication\bin\Debug\EmployeeDBApplication.pdb
+N:\Personal\leicester\advancedweb\lab2\EmployeeDBApplication\EmployeeDBApplication\bin\Debug\MySql.Data.dll
+N:\Personal\leicester\advancedweb\lab2\EmployeeDBApplication\EmployeeDBApplication\obj\x86\Debug\EmployeeDBApplication.csprojResolveAssemblyReference.cache
+N:\Personal\leicester\advancedweb\lab2\EmployeeDBApplication\EmployeeDBApplication\obj\x86\Debug\EmployeeDBApplication.exe
+N:\Personal\leicester\advancedweb\lab2\EmployeeDBApplication\EmployeeDBApplication\obj\x86\Debug\EmployeeDBApplication.pdb
