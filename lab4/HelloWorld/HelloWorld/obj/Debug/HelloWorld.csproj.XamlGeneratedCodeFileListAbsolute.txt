@@ -1,0 +1,2 @@
+obj\Debug\_HelloWorld.g.cs
+obj\Debug\HelloWorld.ServiceReference1.UpperOperatorPortType.upper.g.cs

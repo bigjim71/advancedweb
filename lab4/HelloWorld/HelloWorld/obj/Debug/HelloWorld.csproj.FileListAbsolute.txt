@@ -1,0 +1,9 @@
+N:\Personal\leicester\advancedweb\lab4\HelloWorld\HelloWorld\bin\HelloWorld.dll
+N:\Personal\leicester\advancedweb\lab4\HelloWorld\HelloWorld\bin\HelloWorld.pdb
+N:\Personal\leicester\advancedweb\lab4\HelloWorld\HelloWorld\obj\Debug\HelloWorld.dll
+N:\Personal\leicester\advancedweb\lab4\HelloWorld\HelloWorld\obj\Debug\HelloWorld.pdb
+N:\Personal\leicester\advancedweb\lab4\HelloWorld\HelloWorld\obj\Debug\HelloWorld.ServiceReference1.UpperOperatorPortType.upper.g.xaml
+N:\Personal\leicester\advancedweb\lab4\HelloWorld\HelloWorld\obj\Debug\_HelloWorld.g.cs
+N:\Personal\leicester\advancedweb\lab4\HelloWorld\HelloWorld\obj\Debug\HelloWorld.ServiceReference1.UpperOperatorPortType.upper.g.cs
+N:\Personal\leicester\advancedweb\lab4\HelloWorld\HelloWorld\obj\Debug\HelloWorld.csproj.XamlGeneratedCodeFileListAbsolute.txt
+N:\Personal\leicester\advancedweb\lab4\HelloWorld\HelloWorld\obj\Debug\HelloWorld.csproj.XamlGeneratedXamlFileListAbsolute.txt

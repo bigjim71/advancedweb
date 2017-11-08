@@ -1,0 +1,1 @@
+obj\Debug\HelloWorld.ServiceReference1.UpperOperatorPortType.upper.g.xaml
