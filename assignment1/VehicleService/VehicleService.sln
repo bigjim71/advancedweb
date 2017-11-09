@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication", "Conso
 		{9525BA9D-46C2-493C-A316-15910476D3F2} = {9525BA9D-46C2-493C-A316-15910476D3F2}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTOClassLibrary", "DTOClassLibrary\DTOClassLibrary.csproj", "{370E5DE4-A9C9-4E96-A9DC-7FF345158650}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,6 +52,16 @@ Global
 		{F139A354-F2D8-4D04-801D-63DCFC184DC7}.Release|Mixed Platforms.Build.0 = Release|x86
 		{F139A354-F2D8-4D04-801D-63DCFC184DC7}.Release|x86.ActiveCfg = Release|x86
 		{F139A354-F2D8-4D04-801D-63DCFC184DC7}.Release|x86.Build.0 = Release|x86
+		{370E5DE4-A9C9-4E96-A9DC-7FF345158650}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{370E5DE4-A9C9-4E96-A9DC-7FF345158650}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{370E5DE4-A9C9-4E96-A9DC-7FF345158650}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{370E5DE4-A9C9-4E96-A9DC-7FF345158650}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{370E5DE4-A9C9-4E96-A9DC-7FF345158650}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{370E5DE4-A9C9-4E96-A9DC-7FF345158650}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{370E5DE4-A9C9-4E96-A9DC-7FF345158650}.Release|Any CPU.Build.0 = Release|Any CPU
+		{370E5DE4-A9C9-4E96-A9DC-7FF345158650}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{370E5DE4-A9C9-4E96-A9DC-7FF345158650}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{370E5DE4-A9C9-4E96-A9DC-7FF345158650}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

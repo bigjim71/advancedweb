@@ -73,10 +73,17 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DTOClassLibrary\DTOClassLibrary.csproj">
+      <Project>{370E5DE4-A9C9-4E96-A9DC-7FF345158650}</Project>
+      <Name>DTOClassLibrary</Name>
+    </ProjectReference>
     <ProjectReference Include="..\VehicleDBApplication\VehicleDBApplication.csproj">
       <Project>{B13B7423-27D7-4D75-A8BE-009554D5F265}</Project>
       <Name>VehicleDBApplication</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

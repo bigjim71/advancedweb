@@ -5,7 +5,9 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
+using DTOClassLibrary;
 using VehicleDBApplication;
+//using VehicleService.UpperService;
 
 namespace VehicleService
 {
@@ -34,6 +36,10 @@ namespace VehicleService
 
         public List<SoapVehicle> search(string numberPlate)
         {
+
+            //UpperOperatorService.UpperOperatorPortTypeClient upperSvc = new UpperOperatorService.UpperOperatorPortTypeClient("UpperOperatorSOAP12port_http");
+            //numberPlate = upperSvc.upper(numberPlate);
+
             //fetch from database
             VehicleDBApplication.DBService dbService = new DBService();
             List<Vehicle> vList = dbService.advancedSearch(numberPlate);
@@ -52,14 +58,17 @@ namespace VehicleService
             return soapVehicles;
         }
 
-        public SoapVehicle create()
+        public SoapVehicle create(string numberPlate)
         {
+
+            //UpperOperatorService.UpperOperatorPortTypeClient upperSvc = new UpperOperatorService.UpperOperatorPortTypeClient("UpperOperatorSOAP12port_http");
+            //numberPlate = upperSvc.upper(numberPlate);
+
             //create new vehicle
             VehicleDBApplication.DBService dbService = new DBService();
-            Random r = new Random();
 
-            VehicleDBApplication.Vehicle2WD moto = new Vehicle2WD();
-            moto.NumberPlate = r+" moto";
+            DTOClassLibrary.Vehicle2WD moto = new Vehicle2WD();
+            moto.NumberPlate = numberPlate;
             moto.VehicleType = "2WD";
             moto.Mileage = 10000;
             moto.RentalCharge = 10.46;

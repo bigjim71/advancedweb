@@ -6,6 +6,7 @@ using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
 
+
 namespace VehicleService
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the interface name "IService1" in both code and config file together.
@@ -23,7 +24,7 @@ namespace VehicleService
         List<SoapVehicle> search(string numberPlate);
 
         [OperationContract]
-        SoapVehicle create();
+        SoapVehicle create(string numberPlate);
 
         [OperationContract]
         List<SoapVehicle> list();
@@ -53,7 +54,7 @@ namespace VehicleService
     }
 
     [DataContract]
-    public class SoapVehicle
+    public class SoapVehicle: DTOClassLibrary.Vehicle
     {
         private string numberPlate;
         private int mileage;
@@ -61,28 +62,28 @@ namespace VehicleService
         private string vehicleType;
 
         [DataMember]
-        public string NumberPlate
+        public override string NumberPlate
         {
             get { return numberPlate; }
             set { numberPlate = value; }
         }
 
         [DataMember]
-        public int Mileage
+        public override int Mileage
         {
             get { return mileage; }
             set { mileage = value; }
         }
 
         [DataMember]
-        public double RentalCharge
+        public override double RentalCharge
         {
             get { return rentalCharge; }
             set { rentalCharge = value; }
         }
 
         [DataMember]
-        public string VehicleType
+        public override string VehicleType
         {
             get { return vehicleType; }
             set { vehicleType = value; }
@@ -92,5 +93,6 @@ namespace VehicleService
         {
             return "Vehicle: " + numberPlate + " of type: " + vehicleType;
         }
+
     }
 }
