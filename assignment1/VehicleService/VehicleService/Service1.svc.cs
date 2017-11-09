@@ -5,6 +5,7 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
+using VehicleDBApplication;
 
 namespace VehicleService
 {
@@ -31,22 +32,67 @@ namespace VehicleService
         }
          */
 
-        public string search(string numberPlate)
+        public List<SoapVehicle> search(string numberPlate)
         {
             //fetch from database
-            return string.Format("You entered: {0}", numberPlate);
+            VehicleDBApplication.DBService dbService = new DBService();
+            List<Vehicle> vList = dbService.advancedSearch(numberPlate);
+            List<SoapVehicle> soapVehicles = new List<SoapVehicle>();
+
+            foreach (Vehicle v in vList)
+            {
+                SoapVehicle sv = new SoapVehicle();
+                sv.NumberPlate = v.NumberPlate;
+                sv.VehicleType = v.VehicleType;
+                sv.Mileage = v.Mileage;
+                sv.RentalCharge = v.RentalCharge;
+                soapVehicles.Add(sv);
+
+            }
+            return soapVehicles;
         }
 
-        public void create()
+        public SoapVehicle create()
         {
             //create new vehicle
-            //insert into db
+            VehicleDBApplication.DBService dbService = new DBService();
+            Random r = new Random();
+
+            VehicleDBApplication.Vehicle2WD moto = new Vehicle2WD();
+            moto.NumberPlate = r+" moto";
+            moto.VehicleType = "2WD";
+            moto.Mileage = 10000;
+            moto.RentalCharge = 10.46;
+            moto.Under21 = true;
+
+            dbService.createVehicle(moto);
+            SoapVehicle sv = new SoapVehicle();
+            sv.NumberPlate = moto.NumberPlate;
+            sv.VehicleType = moto.VehicleType;
+            sv.Mileage = moto.Mileage;
+            sv.RentalCharge = moto.RentalCharge;
+
+            return sv;
         }
 
-        public string list()
+        public List<SoapVehicle> list()
         {
             //fetch all vehicles from db
-            return "vehicles list";
+            VehicleDBApplication.DBService dbService = new DBService();
+            List<Vehicle> vList = dbService.listVehicles();
+            List<SoapVehicle> soapVehicles = new List<SoapVehicle>();
+
+            foreach (Vehicle v in vList)
+            {
+                SoapVehicle sv = new SoapVehicle();
+                sv.NumberPlate = v.NumberPlate;
+                sv.VehicleType = v.VehicleType;
+                sv.Mileage = v.Mileage;
+                sv.RentalCharge = v.RentalCharge;
+                soapVehicles.Add(sv);
+
+            }
+            return soapVehicles;
         }
 
 

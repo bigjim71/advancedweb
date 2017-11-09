@@ -19,11 +19,14 @@ namespace VehicleService
         [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);*/
 
-        public string search(string numberPlate);
+        [OperationContract]
+        List<SoapVehicle> search(string numberPlate);
 
-        public void create();
+        [OperationContract]
+        SoapVehicle create();
 
-        public string list();
+        [OperationContract]
+        List<SoapVehicle> list();
     }
 
 
@@ -46,6 +49,48 @@ namespace VehicleService
         {
             get { return stringValue; }
             set { stringValue = value; }
+        }
+    }
+
+    [DataContract]
+    public class SoapVehicle
+    {
+        private string numberPlate;
+        private int mileage;
+        private double rentalCharge;
+        private string vehicleType;
+
+        [DataMember]
+        public string NumberPlate
+        {
+            get { return numberPlate; }
+            set { numberPlate = value; }
+        }
+
+        [DataMember]
+        public int Mileage
+        {
+            get { return mileage; }
+            set { mileage = value; }
+        }
+
+        [DataMember]
+        public double RentalCharge
+        {
+            get { return rentalCharge; }
+            set { rentalCharge = value; }
+        }
+
+        [DataMember]
+        public string VehicleType
+        {
+            get { return vehicleType; }
+            set { vehicleType = value; }
+        }
+
+        public override string ToString()
+        {
+            return "Vehicle: " + numberPlate + " of type: " + vehicleType;
         }
     }
 }

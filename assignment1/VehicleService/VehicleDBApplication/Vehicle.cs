@@ -5,11 +5,12 @@ using System.Text;
 
 namespace VehicleDBApplication
 {
-    abstract class Vehicle
+    public abstract class Vehicle : VehicleDBApplication.IVehicle
     {
         private string numberPlate;
         private int mileage;
         private double rentalCharge;
+        private string vehicleType;
 
         public string NumberPlate
         {
@@ -30,9 +31,20 @@ namespace VehicleDBApplication
             get { return rentalCharge; }
             set { rentalCharge = value; }
         }
+
+        public string VehicleType
+        {
+            get { return vehicleType; }
+            set { vehicleType = value; }
+        }
+
+        public override string ToString()
+        {
+            return "Vehicle: " + numberPlate + " of type: " + vehicleType;
+        }
     }
 
-    class Vehicle4WD : Vehicle
+    public class Vehicle4WD : Vehicle, VehicleDBApplication.IVehicle
     {
         private bool offRoad = false;
         private bool dirtRoad = true;
@@ -58,9 +70,10 @@ namespace VehicleDBApplication
             set { normalRoad = value; }
         }
 
+
     }
 
-    class Vehicle2WD : Vehicle
+    public class Vehicle2WD : Vehicle, VehicleDBApplication.IVehicle
     {
         private bool under21 = false;
 
@@ -69,9 +82,10 @@ namespace VehicleDBApplication
             get { return under21; }
             set { under21 = value; }
         }
+
     }
 
-    class CamperVan : Vehicle
+    public class CamperVan : Vehicle, VehicleDBApplication.IVehicle
     {
         private int numberBeds;
         private bool toilet;

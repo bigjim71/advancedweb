@@ -72,6 +72,12 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VehicleDBApplication\VehicleDBApplication.csproj">
+      <Project>{B13B7423-27D7-4D75-A8BE-009554D5F265}</Project>
+      <Name>VehicleDBApplication</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
   <ProjectExtensions>
