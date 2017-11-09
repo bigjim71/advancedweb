@@ -54,7 +54,7 @@ namespace VehicleService
     }
 
     [DataContract]
-    public class SoapVehicle: DTOClassLibrary.Vehicle
+    public class SoapVehicle
     {
         private string numberPlate;
         private int mileage;
@@ -62,28 +62,28 @@ namespace VehicleService
         private string vehicleType;
 
         [DataMember]
-        public override string NumberPlate
+        public string NumberPlate
         {
             get { return numberPlate; }
             set { numberPlate = value; }
         }
 
         [DataMember]
-        public override int Mileage
+        public int Mileage
         {
             get { return mileage; }
             set { mileage = value; }
         }
 
         [DataMember]
-        public override double RentalCharge
+        public double RentalCharge
         {
             get { return rentalCharge; }
             set { rentalCharge = value; }
         }
 
         [DataMember]
-        public override string VehicleType
+        public string VehicleType
         {
             get { return vehicleType; }
             set { vehicleType = value; }
