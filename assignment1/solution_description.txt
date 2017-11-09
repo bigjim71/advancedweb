@@ -1,0 +1,83 @@
+All 4 questions have been attempted.
+
+All code can also be found on github at:
+
+https://github.com/bigjim71/advancedweb/tree/master/assignment1
+
+Class structure is in class library project "DTOClassLibrary" (Vehicle.cs).
+
+The library classes are shared between "VehicleDBApplication" which will insert/retrieve records 
+from the database, and "VehicleRentalService", the WCF implementation/deployment.
+
+"ConsoleApplication" will provide user menu to invoke operations on "VehicleRentalService", which uses
+"VehicleDBApplication" to communicate with the database.
+
+Question 1:
+See classes in DTOClassLibrary.Vehicle.cs.
+See VehicleDBApplication.Program.cs console application to create sample data.
+
+Question 2:
+See file database.sql (extract below).
+Also available on github here
+https://github.com/bigjim71/advancedweb/tree/master/assignment1/VehicleService/VehicleDBApplication
+
+Question 3:
+See VehicleRentalService.Service1.svc
+
+Question 4:
+See ConsoleApplication.Program.cs
+
+Database code:
+
+SET FOREIGN_KEY_CHECKS=0;
+-- ----------------------------
+-- Table structure for vehicle
+-- ----------------------------
+DROP TABLE IF EXISTS `vehicle`;
+CREATE TABLE `vehicle` (
+  `numberPlate` varchar(255) NOT NULL,
+  `vehicleType` varchar(30) NOT NULL,
+  `mileage` int(11) NOT NULL default 0,
+  `rentalCharge` double default NULL,
+  `under21` boolean default false,
+  `offRoad` boolean default false,
+  `dirtRoad` boolean default true,
+  `normalRoad` boolean default true,
+  `numberBeds` int(1) default 4,
+  `toilet` boolean default false,
+  
+  PRIMARY KEY  (`numberPlate`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- ----------------------------
+-- Table structure for rentals
+-- ----------------------------
+DROP TABLE IF EXISTS `rental`;
+CREATE TABLE `rental` (
+  `rentalNumber` int(11) NOT NULL default 0,
+  `numberPlate` varchar(255) NOT NULL,  
+  `available` boolean default true,
+
+  PRIMARY KEY  (`rentalNumber`),
+  FOREIGN KEY (numberPlate) REFERENCES Vehicle(numberPlate)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+-- ----------------------------
+-- Records 
+-- ----------------------------
+
+-- 4WD
+-- numberPlate, vehicleType, mileage, rentalCharge, under21, offRoad, dirtRoad, normalRoad, numberBeds, toilet
+INSERT INTO `vehicle` VALUES ('ab123 4WD', '4WD',  100000, 500, false, true, true, true, 0, false);
+-- 2WD
+INSERT INTO `vehicle` VALUES ('ab123 2WD', '2WD', 1009, 50, true, true, true, true, 0, false);
+-- Camper
+INSERT INTO `vehicle` VALUES ('ab123 CAMP', 'CAMPER', 10009, 550, true, false, false, true, 3, true);
+-- Rental
+INSERT INTO `rental` VALUES (10000, 'ab123 CAMP', true);
+
+
+
+
+
+
+
