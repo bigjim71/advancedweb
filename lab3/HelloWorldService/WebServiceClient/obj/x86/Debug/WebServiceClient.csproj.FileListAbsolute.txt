@@ -3,3 +3,4 @@ N:\Personal\leicester\advancedweb\lab3\HelloWorldService\WebServiceClient\bin\De
 N:\Personal\leicester\advancedweb\lab3\HelloWorldService\WebServiceClient\bin\Debug\WebServiceClient.pdb
 N:\Personal\leicester\advancedweb\lab3\HelloWorldService\WebServiceClient\obj\x86\Debug\WebServiceClient.exe
 N:\Personal\leicester\advancedweb\lab3\HelloWorldService\WebServiceClient\obj\x86\Debug\WebServiceClient.pdb
+N:\Personal\leicester\advancedweb\lab3\HelloWorldService\WebServiceClient\obj\x86\Debug\WebServiceClient.csprojResolveAssemblyReference.cache

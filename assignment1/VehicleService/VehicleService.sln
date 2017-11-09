@@ -1,16 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleService", "VehicleService\VehicleService.csproj", "{9525BA9D-46C2-493C-A316-15910476D3F2}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleDBApplication", "VehicleDBApplication\VehicleDBApplication.csproj", "{B13B7423-27D7-4D75-A8BE-009554D5F265}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication", "ConsoleApplication\ConsoleApplication.csproj", "{F139A354-F2D8-4D04-801D-63DCFC184DC7}"
 	ProjectSection(ProjectDependencies) = postProject
-		{9525BA9D-46C2-493C-A316-15910476D3F2} = {9525BA9D-46C2-493C-A316-15910476D3F2}
+		{5266460D-599F-438F-8C82-2E709476F3A3} = {5266460D-599F-438F-8C82-2E709476F3A3}
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTOClassLibrary", "DTOClassLibrary\DTOClassLibrary.csproj", "{370E5DE4-A9C9-4E96-A9DC-7FF345158650}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleRentalService", "VehicleRentalService\VehicleRentalService.csproj", "{5266460D-599F-438F-8C82-2E709476F3A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,16 +22,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9525BA9D-46C2-493C-A316-15910476D3F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9525BA9D-46C2-493C-A316-15910476D3F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9525BA9D-46C2-493C-A316-15910476D3F2}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{9525BA9D-46C2-493C-A316-15910476D3F2}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{9525BA9D-46C2-493C-A316-15910476D3F2}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{9525BA9D-46C2-493C-A316-15910476D3F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9525BA9D-46C2-493C-A316-15910476D3F2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9525BA9D-46C2-493C-A316-15910476D3F2}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{9525BA9D-46C2-493C-A316-15910476D3F2}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{9525BA9D-46C2-493C-A316-15910476D3F2}.Release|x86.ActiveCfg = Release|Any CPU
 		{B13B7423-27D7-4D75-A8BE-009554D5F265}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{B13B7423-27D7-4D75-A8BE-009554D5F265}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
 		{B13B7423-27D7-4D75-A8BE-009554D5F265}.Debug|Mixed Platforms.Build.0 = Debug|x86
@@ -62,6 +52,16 @@ Global
 		{370E5DE4-A9C9-4E96-A9DC-7FF345158650}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{370E5DE4-A9C9-4E96-A9DC-7FF345158650}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{370E5DE4-A9C9-4E96-A9DC-7FF345158650}.Release|x86.ActiveCfg = Release|Any CPU
+		{5266460D-599F-438F-8C82-2E709476F3A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5266460D-599F-438F-8C82-2E709476F3A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5266460D-599F-438F-8C82-2E709476F3A3}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{5266460D-599F-438F-8C82-2E709476F3A3}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{5266460D-599F-438F-8C82-2E709476F3A3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5266460D-599F-438F-8C82-2E709476F3A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5266460D-599F-438F-8C82-2E709476F3A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5266460D-599F-438F-8C82-2E709476F3A3}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{5266460D-599F-438F-8C82-2E709476F3A3}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{5266460D-599F-438F-8C82-2E709476F3A3}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

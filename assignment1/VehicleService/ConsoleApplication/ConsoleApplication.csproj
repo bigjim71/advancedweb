@@ -47,7 +47,7 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Service References\VehicleService\Reference.cs">
+    <Compile Include="Service References\ServiceReferenceVehicleRental\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -60,34 +60,34 @@
     <None Include="app.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\VehicleService\ConsoleApplication.VehicleService.SoapVehicle.datasource">
+    <None Include="Service References\ServiceReferenceVehicleRental\ConsoleApplication.ServiceReferenceVehicleRental.SoapVehicle.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\VehicleService\Service1.xsd">
+    <None Include="Service References\ServiceReferenceVehicleRental\Service1.wsdl" />
+    <None Include="Service References\ServiceReferenceVehicleRental\Service1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\VehicleService\Service11.xsd">
+    <None Include="Service References\ServiceReferenceVehicleRental\Service11.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\VehicleService\Service12.xsd">
+    <None Include="Service References\ServiceReferenceVehicleRental\Service12.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\VehicleService\VehicleService.wsdl" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Service References\VehicleService\" />
+    <WCFMetadataStorage Include="Service References\ServiceReferenceVehicleRental\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\VehicleService\Service1.disco" />
+    <None Include="Service References\ServiceReferenceVehicleRental\Service1.disco" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\VehicleService\configuration91.svcinfo" />
+    <None Include="Service References\ServiceReferenceVehicleRental\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\VehicleService\configuration.svcinfo" />
+    <None Include="Service References\ServiceReferenceVehicleRental\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\VehicleService\Reference.svcmap">
+    <None Include="Service References\ServiceReferenceVehicleRental\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

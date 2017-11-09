@@ -2,3 +2,4 @@ N:\Personal\leicester\advancedweb\lab3\HelloWorldService\HelloWorldService\bin\H
 N:\Personal\leicester\advancedweb\lab3\HelloWorldService\HelloWorldService\bin\HelloWorldService.pdb
 N:\Personal\leicester\advancedweb\lab3\HelloWorldService\HelloWorldService\obj\Debug\HelloWorldService.dll
 N:\Personal\leicester\advancedweb\lab3\HelloWorldService\HelloWorldService\obj\Debug\HelloWorldService.pdb
+N:\Personal\leicester\advancedweb\lab3\HelloWorldService\HelloWorldService\obj\Debug\HelloWorldService.csprojResolveAssemblyReference.cache

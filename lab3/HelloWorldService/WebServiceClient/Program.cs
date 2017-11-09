@@ -10,11 +10,12 @@ namespace WebServiceClient
     {
         static void Main(string[] args)
         {
+            /*
             ServiceReference1.Service1Client client = new ServiceReference1.Service1Client();
             string s = client.GetData(9);
             Console.WriteLine(s);
             Console.WriteLine("_______");
-            //Console.ReadLine();
+            //Console.ReadLine();*/
 
             ServiceReference2.UpperOperatorPortTypeClient c2 = new UpperOperatorPortTypeClient("UpperOperatorSOAP12port_http");
             string upper = c2.upper("lowercase");

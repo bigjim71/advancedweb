@@ -27,9 +27,10 @@ namespace ConsoleApplication
                     Console.WriteLine("Please input number plate : eg \"cd123 moto\" ");
                     plateInput = Console.ReadLine();
 
-                    VehicleService.VehicleServiceClient vsc = new VehicleService.VehicleServiceClient("BasicHttpBinding_IVehicleService");
-                    VehicleService.SoapVehicle[] v_arr = vsc.search(plateInput);//eg "cd123 moto"
-                    foreach (VehicleService.SoapVehicle v in v_arr)
+                    ServiceReferenceVehicleRental.Service1Client vsc = new ServiceReferenceVehicleRental.Service1Client("BasicHttpBinding_IService1");
+                    //VehicleService.VehicleServiceClient vsc = new VehicleService.VehicleServiceClient("BasicHttpBinding_IVehicleService");
+                    ServiceReferenceVehicleRental.SoapVehicle[] v_arr = vsc.search(plateInput);//eg "cd123 moto"
+                    foreach (ServiceReferenceVehicleRental.SoapVehicle v in v_arr)
                     {
                         Console.WriteLine(v.NumberPlate);
                         Console.WriteLine(v.VehicleType);
@@ -42,8 +43,8 @@ namespace ConsoleApplication
                     Console.WriteLine("Please input number plate : eg \"cd123 moto\" ");
                     plateInput = Console.ReadLine();
 
-                    VehicleService.VehicleServiceClient vsc = new VehicleService.VehicleServiceClient("BasicHttpBinding_IVehicleService");
-                    VehicleService.SoapVehicle v = vsc.create(plateInput);
+                    ServiceReferenceVehicleRental.Service1Client vsc = new ServiceReferenceVehicleRental.Service1Client("BasicHttpBinding_IService1");
+                    ServiceReferenceVehicleRental.SoapVehicle v = vsc.create(plateInput);
                     Console.WriteLine(v.NumberPlate);
                     Console.WriteLine(v.VehicleType);
                     Console.WriteLine(v.ToString());
@@ -51,9 +52,9 @@ namespace ConsoleApplication
                 }
                 if (choice.ToLower().Equals("c"))
                 {
-                    VehicleService.VehicleServiceClient vsc = new VehicleService.VehicleServiceClient("BasicHttpBinding_IVehicleService");
-                    VehicleService.SoapVehicle[] v_arr = vsc.list();
-                    foreach (VehicleService.SoapVehicle v in v_arr)
+                    ServiceReferenceVehicleRental.Service1Client vsc = new ServiceReferenceVehicleRental.Service1Client("BasicHttpBinding_IService1");
+                    ServiceReferenceVehicleRental.SoapVehicle[] v_arr = vsc.list();
+                    foreach (ServiceReferenceVehicleRental.SoapVehicle v in v_arr)
                     {
                         Console.WriteLine(v.NumberPlate);
                         Console.WriteLine(v.VehicleType);
